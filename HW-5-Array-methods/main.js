@@ -16,20 +16,26 @@ console.log(`1. 15 рандомних чисел від 1 до 100:`, getRandomA
 
 function getModa(...numbers) {
     const integerNum = numbers.filter((item) => Number.isInteger(item));
-    const moda = {};
+    const numOfNum = {} 
+    const moda = [];
     let max = 0, count = 0;
     for (let i = 0; i < integerNum.length; i++) {
        const num = integerNum[i];
-       moda[num] = (moda[num] || 0) + 1;
-       if (count < moda[num]) {
+       numOfNum[num] = (numOfNum[num] || 0) + 1;
+       if (count < numOfNum[num]) {
           max = num;
-          count = moda[num];
+          count = numOfNum[num];
        }
     }
-    return max;
+    const maxValue = Math.max(...Object.values(numOfNum));
+    for (const item in numOfNum) {
+        if (numOfNum[item] === maxValue)
+        moda.push(+item);
+    }
+    return moda;
  }
 
-console.log(`2. Визначення моди даних чисел (не враховуючи нецілі числа):`, getModa(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1));
+console.log(`2. Визначення моди даних чисел (не враховуючи нецілі числа):`, getModa(6, 2, 55, 55, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1));
 
 // 3. Створіть функцію, яка рахує середнє арифметичне всіх переданих в неї аргументів.
 
@@ -119,8 +125,9 @@ function generateCombinations(word) {
         }
         if (word.length < 2) return [word];
     }
-    return sortArr;
+    const uniqueText = new Set(sortArr);
+    return [...uniqueText];
 }
 
 console.log(`10.1. Визначення усіх можливих (унікальних) перестановок літер у слові:`, generateCombinations("man"));
-console.log(`10.2. Визначення усіх можливих (унікальних) перестановок літер у слові:`, generateCombinations("ol"));
+console.log(`10.2. Визначення усіх можливих (унікальних) перестановок літер у слові:`, generateCombinations("oll"));
