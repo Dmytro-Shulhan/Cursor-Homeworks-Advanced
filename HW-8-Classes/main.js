@@ -75,3 +75,6 @@ const budgetStudent2 = new BudgetStudent("Рід-Коледжу", 1, "Стів �
 console.log(budgetStudent2.getInfo());
 console.log(budgetStudent2.getMarks);
 console.log(budgetStudent2.getAverageMark());
+
+
+//27
