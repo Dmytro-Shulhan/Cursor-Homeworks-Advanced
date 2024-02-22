@@ -78,3 +78,4 @@ console.log(budgetStudent2.getAverageMark());
 
 
 //32
+  // 22.02-new
