@@ -77,6 +77,6 @@ console.log(budgetStudent2.getMarks);
 console.log(budgetStudent2.getAverageMark());
 
 
-//32
+//33
     // 22.02-new
     // 23.02-duplicate
