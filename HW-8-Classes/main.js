@@ -77,7 +77,7 @@ console.log(budgetStudent2.getMarks);
 console.log(budgetStudent2.getAverageMark());
 
 
-//36
+//42            ------   2021 (10) / 2022 (13) / 2023 (0)
     // 22.02-new
     // 23.02-duplicate
     // 24.02-duplicate
