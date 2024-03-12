@@ -97,3 +97,4 @@ console.log(budgetStudent2.getAverageMark());
     // 09.03-duplicate - 45
     // 10.03-duplicate - 46
     // 11.03-duplicate - 47
+    // 12.03-duplicate - 48
