@@ -126,3 +126,4 @@ console.log(budgetStudent2.getAverageMark());
     // 07.04-duplicate - 74
     // 08.04-duplicate - 75
     // 09.04-duplicate - 76
+    // 10.04-duplicate - 77
