@@ -135,3 +135,4 @@ console.log(budgetStudent2.getAverageMark());
     // 16.04-duplicate - 83
     // 17.04-duplicate - 84
     // 18.04-duplicate - 85
+    // 19.04-duplicate - 86
