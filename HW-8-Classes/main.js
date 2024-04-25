@@ -141,3 +141,4 @@ console.log(budgetStudent2.getAverageMark());
     // 22.04-duplicate - 89
     // 23.04-duplicate - 90
     // 24.04-duplicate - 91
+    // 25.04-duplicate - 92
