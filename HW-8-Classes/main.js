@@ -160,3 +160,4 @@ console.log(budgetStudent2.getAverageMark());
     // 12.05-duplicate - 108
     // 13.05-duplicate - 109
     // 14.05-duplicate - 110
+    // 15.05-duplicate - 111
